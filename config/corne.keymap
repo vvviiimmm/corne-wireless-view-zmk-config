@@ -17,6 +17,21 @@
             key-positions = <0 11>;
             layers = <1>;
         };
+
+        arcmain {
+            bindings = <&kp LC(NUMBER_1)>;
+            key-positions = <2 3>;
+        };
+
+        arcdi {
+            bindings = <&kp LC(NUMBER_2)>;
+            key-positions = <4 3>;
+        };
+
+        arcwork {
+            bindings = <&kp LC(NUMBER_3)>;
+            key-positions = <4 5>;
+        };
     };
 
     keymap {
@@ -47,10 +62,10 @@
 
             label = "Lower";
             bindings = <
-&kp TAB    &trans  &kp N7        &kp N8         &kp N9            &trans          &kp N6    &kp N7     &kp N8    &kp N9     &kp N0  &kp BSPC
-&trans     &trans  &kp NUMBER_4  &kp N5         &kp NUMBER_6      &trans          &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT  &trans  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_0    &trans    &kp SPACE  &trans    &trans     &trans  &trans
-                                 &kp RIGHT_ALT  &kp LEFT_COMMAND  &kp SPACE       &kp RET   &trans     &kp RALT
+&kp TAB    &trans  &kp N7        &kp N8            &kp N9             &trans          &kp N6    &kp N7     &kp N8    &kp N9     &kp N0  &kp BSPC
+&trans     &trans  &kp NUMBER_4  &kp N5            &kp NUMBER_6       &trans          &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &trans  &trans
+&kp LSHFT  &trans  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_0    &trans    &kp SPACE  &trans    &trans     &trans  &trans
+                                 &kp LEFT_CONTROL  &kp RIGHT_COMMAND  &kp SPACE       &kp RET   &trans     &kp RALT
             >;
         };
 
@@ -71,3 +86,4 @@
         };
     };
 };
+
