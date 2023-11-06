@@ -11,6 +11,12 @@
             key-positions = <5 6>;
             layers = <0>;
         };
+
+        btprofile {
+            bindings = <&bt BT_NXT>;
+            key-positions = <0 11>;
+            layers = <1>;
+        };
     };
 
     keymap {
@@ -41,10 +47,10 @@
 
             label = "Lower";
             bindings = <
-&kp TAB    &kp K_FIND    &kp N7        &kp N8         &kp N9            &trans          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &kp BSPC
-&trans     &bt BT_SEL 0  &kp NUMBER_4  &kp N5         &kp NUMBER_6      &trans          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &trans
-&kp LSHFT  &trans        &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_0    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-                                       &kp RIGHT_ALT  &kp LEFT_COMMAND  &kp SPACE       &kp RET       &trans        &kp RALT
+&kp TAB    &trans  &kp N7        &kp N8         &kp N9            &trans          &kp N6    &kp N7     &kp N8    &kp N9     &kp N0  &kp BSPC
+&trans     &trans  &kp NUMBER_4  &kp N5         &kp NUMBER_6      &trans          &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &trans  &trans
+&kp LSHFT  &trans  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_0    &trans    &kp SPACE  &trans    &trans     &trans  &trans
+                                 &kp RIGHT_ALT  &kp LEFT_COMMAND  &kp SPACE       &kp RET   &trans     &kp RALT
             >;
         };
 
